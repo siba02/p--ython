@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Timetable</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>University Timetable</h1>
+    <table>
+        <tr>
+            <th>Time/Day</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>lunchbreak</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>8:00 AM - 9:00 AM</td>
+            <td>Class A</td>
+            <td>Class B</td>
+            <td rowspan="3">b <br>r <br>e <br>a <br>k <br></td>
+            <td>Class A</td>
+            <td>Class C</td>
+            <td>Class B</td>
+        </tr>
+        <tr>
+            <td>9:15 AM - 10:15 AM</td>
+            <td>Class B</td>
+            <td>Class A</td>
+            <td colspan="2">Class C</td>
+            
+            <td>Class A</td>
+        </tr>
+        <tr>
+            <td>10:30 AM - 11:30 AM</td>
+            <td>Class C</td>
+            <td>Class C</td>
+            <td>Class B</td>
+            <td>Class A</td>
+            <td>Class C</td>
+        </tr>
+        <!-- Add more rows for different time slots -->
+    </table>
+</body>
+</html>
